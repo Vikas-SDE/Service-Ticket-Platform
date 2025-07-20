@@ -1,5 +1,12 @@
 package com.sts.dto.response;
 
-public record UserResponse() {
+import com.sts.enums.UserRole;
+
+public record UserResponse(    Long id,
+	    String email,
+	    String name,
+	    String phone,
+	    String department,
+	    UserRole role) {
 
 }
